@@ -2065,7 +2065,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: "";
   display: block;
   background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -2130,7 +2130,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 .bricks-wrapper .item-wrap .details-link {
   display: block;
-  background-color: transparent;
+  background-color:white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 4.6rem;
   width: 4.6rem;
