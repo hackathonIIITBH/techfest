@@ -391,7 +391,14 @@ img.pull-left {
  * block grids paddings
  * ------------------------------------------------------------------- */
 .bgrid {
-  padding: 0 20px;
+  padding: 0 20px;  
+  transition: 1s ease;
+}
+.bgrid:hover .icon {
+  transform: scale(1.5,1.5);
+}
+.bgrid:hover .h05 {
+  transform: scale(1.5,1.5);
 }
 @media only screen and (max-width: 1024px) {
   .bgrid {
@@ -1885,8 +1892,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #services {
-  background-color: #19191b;
-  background-image: url(../images/services-bg.jpg);
+  background-color: #111111;
+  
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -1903,7 +1910,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(5, 5, 5, 0.7);
+  background-color: #111111;
 }
 #services .gradient-overlay {
   position: absolute;
