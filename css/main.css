@@ -2065,7 +2065,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: "";
   display: block;
   background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -2557,10 +2557,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   z-index: 600;
   margin-left: 10%; 
 }
-#invisible {  
-  transition: 1s ease;
+#invisible {
   text-align: center;
-  opacity: 0;
 }
 #invisible strong {
   font-size:large;
