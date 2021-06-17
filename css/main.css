@@ -1819,6 +1819,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #2e383f;
   margin-top: 6rem;
 }
+/* Time Line Added */
 * {
   box-sizing: border-box;
 }
@@ -1929,6 +1930,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
       left: 0%;
     }
   }
+  /* Time Line Section */
   
 
 /* ------------------------------------------------------------------- 
