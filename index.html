@@ -5,6 +5,115 @@
 <html class="no-js" lang="en">
   <!--<![endif]-->
   <head>
+	  <style>
+		  .container {
+  background-image: linear-gradient(to bottom, var(--blue700), var(--blue500));
+  min-height: 100vh;
+}
+
+.counter-wrapper {
+  height: 80vh;
+
+  & .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  & .header {
+    color: var(--white);
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    word-spacing: 4px;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+  }
+
+  & .count {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    & .sec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      & h2 {
+        color: var(--soft-red);
+        font-size: 8rem;
+        background: var(--blue500);
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      & p {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 20vh;
+  color: var(--white);
+
+  & .icons {
+    display: flex;
+    margin: 0 auto;
+
+    & .icon {
+      list-style: none;
+      margin: 1rem;
+
+      & .icon-link {
+        text-decoration: none;
+        color: var(--grayish-blue);
+        transition: color 300ms ease;
+
+        & i {
+          font-size: 2.4rem;
+        }
+
+        &:hover {
+          color: var(--soft-red);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+	  </style>
     <!--- basic page needs
    ================================================== -->
     <meta charset="utf-8" />
@@ -101,34 +210,6 @@
    ================================================== -->
     <section id="home">
       <div class="overlay"></div>
-       <div class="countdown mt-mb-5 mb-md-5 ">
-                    <div class="row ">
-                        <div class="col-md-3 col-3 col-sm-3 ">
-                            <div class="timer-block ">
-                                <h4 class="timer-value" id="days">0</h4>
-                                <h5 class="timer-static">Days</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-3 col-sm-3 ">
-                            <div class="timer-block">
-                                <h4 class="timer-value" id="hours">0</h4>
-                                <h5 class="timer-static">Hours</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-3 col-sm-3">
-                            <div class="timer-block">
-                                <h4 class="timer-value" id="minutes">0</h4>
-                                <h5 class="timer-static">Minutes</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-3 col-sm-3">
-                            <div class="timer-block">
-                                <h4 class="timer-value" id="seconds">0</h4>
-                                <h5 class="timer-static">Seconds</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
       <div class="home-content-table">
         <div class="home-content-tablecell">
           <div class="row">
@@ -137,6 +218,48 @@
               <h1 class="animate-intro">
                 Bit by Bit<br />
               </h1>
+		    <main class="container">
+  <div class="counter-wrapper">
+    <div class="counter">
+      <h1 class="header">We're launching soon</h1>
+      <div class="count">
+        <div class="months sec">
+          <h2 id="months">00</h2>
+          <p>Months</p>
+        </div>
+        <div class="days sec">
+          <h2 id="days">00</h2>
+          <p>Days</p>
+        </div>
+        <div class="hours sec">
+          <h2 id="hours">00</h2>
+          <p>Hours</p>
+        </div>
+        <div class="minutes sec">
+          <h2 id="minutes">00</h2>
+          <p>Minutes</p>
+        </div>
+        <div class="seconds sec">
+          <h2 id="seconds">00</h2>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social-icons">
+    <ul class="icons">
+      <li class="icon">
+        <a href="https://www.facebook.com/traveloperhabib" target="_blank" class="icon-link"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="icon">
+        <a href="https://www.youtube.com/channel/UCoQGW9rG4cFRAZPUfmPg4gw" target="_blank" class="icon-link"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li class="icon">
+        <a href="https://instagram.com/traveloperhabib" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+  </div>
+</main>
 
               <div class="more animate-intro">
                 <a class="smoothscroll button stroke" href="#about">
