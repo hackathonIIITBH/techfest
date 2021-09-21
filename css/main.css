@@ -567,7 +567,7 @@ select {
   padding: 1.5rem 2rem;
   border: 0;
   outline: none;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   color: #444444;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.4rem;
@@ -1253,8 +1253,8 @@ header .row {
  * ------------------------------------------------------------------- */
 header .header-logo {
   position: absolute;
-  left: 32px;
-  top: 42px;
+  left: 60px;
+  top: 60px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -1267,10 +1267,10 @@ header .header-logo a {
   padding: 0;
   outline: 0;
   border: none;
-  width: 57px;
-  height: 27px;
+  width: 60px;
+  height: 60px;
   background: url("../images/Icon Enyugma.png") no-repeat center;
-  background-size: 57px 27px;
+  background-size: 60px 60px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1370,6 +1370,7 @@ header .header-logo a {
   overflow-y: auto;
   z-index: 800;
   -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -1496,9 +1497,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   header .header-logo a {
-    width: 51px;
-    height: 24px;
-    background-size: 51px 24px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -2439,7 +2440,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin: 0 auto 1.2rem auto;
   display: block;
   border-radius: 50%;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 #testimonial-slider .testimonial-author .author-info {
   display: inline-block;
@@ -2612,6 +2613,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: #959595;
   margin: 6px 6px;
   display: block;
+  backface-visibility: visible;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 50%;
