@@ -805,7 +805,7 @@ button.large, .button.large {
 
 button.stroke, .button.stroke {
   background: transparent !important;
-  border: 3px solid #313131;
+  border: 3px solid #fffcfc;
   line-height: 4.8rem;
 }
 
