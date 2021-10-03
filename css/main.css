@@ -2679,6 +2679,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
   }
   .hover-image {
     width: 50%;
@@ -2698,6 +2699,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
   }
   .hover-image {
     width: 100%;
