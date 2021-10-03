@@ -2671,6 +2671,46 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   display: flex;
   flex-wrap: wrap;
 }
+
+@media(min-width: 992px) {
+  .prize-list-1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hover-image {
+    width: 50%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+  }
+}
+@media(max-width: 992px) {
+  .prize-list-1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hover-image {
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+}
 /* .main-prizes {
   float: left;
   height: 60%;
@@ -2713,15 +2753,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   border: 1px solid none;
   border-radius: 10px;
 }
-.hover-image {
-  width: 50%;
-  height: 20%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-}
+
 /* Changes End */
 
 .partner-prize {
