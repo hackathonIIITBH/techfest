@@ -2686,6 +2686,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   height: 40%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media(min-width: 992px) {
