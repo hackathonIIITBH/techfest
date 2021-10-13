@@ -1187,6 +1187,17 @@ input::-moz-focus-inner {
   background-color: rgba(242, 242, 242, 0.1);
   text-align: center;
 }
+.ca-button {
+  border-radius: 8px;
+  background-color: #200cd1;
+  color: white;
+}
+.ca-button:hover {
+  background-color: #230de9;
+  transform: scale(1.1);
+  color: white;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
