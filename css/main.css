@@ -1197,6 +1197,10 @@ input::-moz-focus-inner {
   transform: scale(1.1);
   color: white;
 }
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
 
 
 /* ------------------------------------------------------------------- 
