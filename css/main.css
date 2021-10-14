@@ -1201,6 +1201,10 @@ input::-moz-focus-inner {
   display: flex;
   flex-direction: column;
 }
+.devfolio-btn {
+  display: flex;
+  justify-content: center;
+}
 
 
 /* ------------------------------------------------------------------- 
