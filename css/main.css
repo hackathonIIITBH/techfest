@@ -34,6 +34,7 @@
 @import url("micons/micons.css");
 @import url("fonts.css");
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
@@ -97,7 +98,7 @@ a:hover, a:focus {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 187, 0); 
+  background: #e5a743; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -215,7 +216,7 @@ blockquote:before {
   font-size: 10rem;
   line-height: 0px;
   margin: 0;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.366);
   font-family: arial, sans-serif;
   position: absolute;
   top: 3.6rem;
@@ -410,11 +411,14 @@ img.pull-left {
   padding: 0 20px;  
   transition: 1s ease;
 }
-.bgrid:hover .icon {
+.bgrid:hover .icon_size_mat {
   transform: scale(1.5,1.5);
 }
 .bgrid:hover .h05 {
   transform: scale(1.5,1.5);
+}
+.material-icons{
+  font-size: 10rem;
 }
 @media only screen and (max-width: 1024px) {
   .bgrid {
@@ -1455,7 +1459,7 @@ header .header-logo a {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.529);
   display: block;
 }
 #menu-nav-wrap .nav-list li a:hover, 
@@ -1474,7 +1478,7 @@ header .header-logo a {
   display: inline-block;
 }
 #menu-nav-wrap .header-social-list li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.529);
 }
 #menu-nav-wrap .header-social-list li a:hover, 
 #menu-nav-wrap .header-social-list li a:focus {
@@ -1610,7 +1614,7 @@ header .header-logo a {
 }
 .home-content-tablecell h1 {
   font-family: "montserrat-bold", serif;
-  font-size: 9rem;
+  font-size: 13rem;
   line-height: 1.133;
   color: #FFFFFF;
 }
@@ -1659,7 +1663,7 @@ header .header-logo a {
 .home-social-list li a:hover, 
 .home-social-list li a:focus, 
 .home-social-list li a:active {
-  color: #151515;
+  color: #aaa8a8;
 }
 
 /* scroll down */
@@ -1943,13 +1947,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 .content {
   padding: 20px 30px;
-  background-color: #111111;
+  background: linear-gradient(to left,rgba(4, 3, 98, 0.867),rgba(16, 17, 97, 0.516));
   position: relative;
   border-radius: 6px;
   color: white;
 }
 .content h2{
   color: white;
+}
+.content p{
+  font-family: 'Secular One', sans-serif;
+  font-size: 2rem;
 }
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
@@ -2785,7 +2793,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   display: block;
   transition: 1s ease;
   backface-visibility: hidden;
-  width: 80%;
+  width: 70%;
 }
 .hover-image:hover .image {
   opacity: 0.8;
@@ -3052,6 +3060,7 @@ footer h4.h05::after {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
+  border: 3px solid white;
 }
 #go-top a i {
   font-size: 3rem;
