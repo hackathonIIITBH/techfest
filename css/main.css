@@ -409,13 +409,14 @@ img.pull-left {
  * ------------------------------------------------------------------- */
 .bgrid {
   padding: 0 20px;  
-  transition: 1s ease;
 }
-.bgrid:hover .icon_size_mat {
-  transform: scale(1.5,1.5);
+.bgrid:hover .icon {
+  transform: scale(1.3,1.3);
+  transition: all 0.5s ease;
 }
 .bgrid:hover .h05 {
-  transform: scale(1.5,1.5);
+  transform: scale(1.2,1.2);
+  transition: all 0.5s ease;
 }
 .material-icons{
   font-size: 10rem;
@@ -1261,7 +1262,7 @@ input::-moz-focus-inner {
 
 .js .animate-this, .js .animate-intro {
   opacity: 0;
-  font-family: 'Silkscreen', cursive;
+  z-index: 5;
 }
 
 
@@ -1270,6 +1271,7 @@ input::-moz-focus-inner {
 .no-cssanimations .animate-this,
 .no-cssanimations .animate-intro {
   opacity: 1;
+  z-index: 5;
 }
 
 .apply-button {
@@ -1870,8 +1872,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
-  line-height: 1.8;
+  font-size: 3.8rem;
+  line-height: 1.5;
+  text-align: justify;
   color: #2e383f;
   margin-top: 6rem;
 }
@@ -2115,8 +2118,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #services .services-list .service-item {
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
   padding: 0 50px;
+  transition: all 1s !important;
+}
+#services .services-list .service-item:hover{
+  cursor: pointer;
 }
 #services .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
