@@ -1859,8 +1859,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
-  line-height: 1.8;
+  font-size: 3.8rem;
+  line-height: 1.5;
+  text-align: justify;
   color: #2e383f;
   margin-top: 6rem;
 }
