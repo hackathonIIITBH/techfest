@@ -1266,6 +1266,7 @@ input::-moz-focus-inner {
 }
 
 
+
 .oldie .animate-this,
 .oldie .animate-intro
 .no-cssanimations .animate-this,
@@ -1929,9 +1930,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #111111;
+  border: medium solid rgb(70, 20, 196);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #111111;
+  border-color: transparent transparent transparent rgb(70, 20, 196);
 }
 .right::before {
   content: " ";
@@ -1941,9 +1942,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #111111;
+  border: medium solid rgb(70, 20, 196);
   border-width: 10px 10px 10px 0;
-  border-color: transparent #111111 transparent transparent;
+  border-color: transparent rgb(70, 20, 196) transparent transparent;
 }
 .right::after {
   left: -16px;
@@ -1954,6 +1955,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   border-radius: 6px;
   color: white;
+}
+.lhs{
+  background: linear-gradient(to right, rgb(47, 172, 222), rgb(70, 20, 196));
+}
+.rhs{
+  background: linear-gradient(to left, rgb(47, 172, 222), rgb(70, 20, 196));
 }
 .content h2{
   color: white;
@@ -3124,3 +3131,10 @@ footer h4.h05::after {
     display: none;
   }
 }
+.animate-intro{
+  font-family: 'Silkscreen', cursive !important;
+}
+.animate-intro h1{
+  font-size: 11rem !important;
+}
+
