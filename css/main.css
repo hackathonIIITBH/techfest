@@ -86,7 +86,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-  color: #000000;
+  color: #888;
 }
 
 /* Scroll-Bar Desgin */
@@ -98,11 +98,11 @@ a:hover, a:focus {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e5a743; 
+  background: #d7d7ff84; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8b803; 
+  background: #7c7fff84; 
 }
 /* Scroll-bar Design Complete */
 
@@ -2068,7 +2068,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #services {
-  background-color: #111111;
+  background-color: #1f1f1f;
   
   background-repeat: no-repeat;
   background-position: center;
@@ -2086,7 +2086,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #111111;
+  background-color: #121212;
 }
 #services .gradient-overlay {
   position: absolute;
@@ -2198,7 +2198,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #portfolio .intro-wrap {
   padding: 15rem 0 21rem;
-  background: #111111;
+  background: #121212;
 }
 #portfolio .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
@@ -3046,7 +3046,7 @@ footer h4.h05::after {
   position: fixed;
   bottom: 42px;
   right: 30px;
-  z-index: 700;
+  z-index: 100;
   display: none;
 }
 #go-top a {
