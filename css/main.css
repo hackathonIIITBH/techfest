@@ -410,7 +410,7 @@ img.pull-left {
 .bgrid {
   padding: 0 20px;  
 }
-.bgrid:hover .icon {
+.bgrid:hover span{
   transform: scale(1.3,1.3);
   transition: all 0.5s ease;
 }
